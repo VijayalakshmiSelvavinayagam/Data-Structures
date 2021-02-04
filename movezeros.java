@@ -16,25 +16,20 @@ class movezeros
 {
 	static void movezerosfn(int[] arr, int n)
 	{	
-		/*int i=0;
-		int j;
-		for(i=0;i<arr.length-1;i++)
+		int i=0;
+		int count=0;
+		for(i=0;i<arr.length;i++)
 		{
-			if(arr[i]==0)
+			if(arr[i]!=0)
 			{
-			for(j=i+1; j<arr.length; j++)
-			{
-				if(arr[j]!=0) 
-				{
-					arr[i]=arr[j];
-					arr[j]=0;
-					break;
-				}
+				int temp = arr[count];
+				arr[count]= arr[i];
+				arr[i]=temp;
+				count++;
 			}
-			}
-		}*/
+		}
 		
-		int i = 0;
+		/*int i = 0;
 		int count = 0;
 		for(i=0; i<arr.length; i++)
 		{
@@ -48,7 +43,7 @@ class movezeros
 		{
 			arr[count]=0;
 			count++;
-		}
+		}*/
 	}
 	public static void main(String[] args)
 	{
